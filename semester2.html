@@ -1,0 +1,411 @@
+<title>2026년 2학기 정규 일정</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  --bg:#EEF2FA;
+  --surface:#FFFFFF;
+  --surface-sub:#F3F6FC;
+  --border:#D8E0F0;
+  --border-sub:#E8EEFA;
+  --ink:#18254A;
+  --ink-2:#4A5B84;
+  --ink-3:#8898BE;
+  --ink-4:#C0CDE6;
+  --hdr:#122058;
+  --hdr-line:#1F3280;
+  --dj:#1059A8;
+  --dh:#6E1CB5;
+  --sh-c:#3A5296;
+  --sh-bg:#E5EBFC;
+
+  /* activity chips */
+  --ec:#1558D6;  --eb:#EDF3FF;
+  --bc:#1A8040;  --bb:#EDFAF3;
+  --sc:#0585A8;  --sb:#E8F8FD;
+  --mc:#6B25C0;  --mb:#F4EEFF;
+  --pc:#B51466;  --pb:#FEF0F7;
+  --nc:#9A5400;  --nb:#FFF6E8;
+  --tc:#C0181C;  --tb:#FFF3F3;
+  --lc:#6C45E0;  --lb:#F2EEFF;
+  --skc:#4B5E8A; --skb:#F0F3FA;
+  /* new for 2학기 */
+  --clc:#B04A10; --clb:#FFF3EC;   /* 클라이밍 — warm orange */
+  --soc:#1A7A6A; --sob:#EAF9F5;   /* 사회성수업 — teal */
+  --frc:#2A7030; --frb:#EDF9EE;   /* 들풀숲 — forest green */
+  --kkc:#7A5500; --kkb:#FFF8E0;   /* 키키네틱 — amber */
+
+  --r:10px;
+  --rs:6px;
+  --shadow:0 1px 4px rgba(18,32,88,.07),0 0 0 1px rgba(18,32,88,.04);
+}
+@media(prefers-color-scheme:dark){:root{
+  --bg:#0B1225;--surface:#152040;--surface-sub:#192850;
+  --border:#243560;--border-sub:#1C2C52;
+  --ink:#D8E4F8;--ink-2:#7A90C4;--ink-3:#4A5E88;--ink-4:#2A3D68;
+  --hdr:#0A1430;--hdr-line:#182868;
+  --dj:#4A8EE8;--dh:#AA60F0;
+  --sh-c:#8898D0;--sh-bg:#192050;
+  --ec:#5A98F8;--eb:#0A1A40;--bc:#3ACD70;--bb:#052814;
+  --sc:#20C8EE;--sb:#042030;--mc:#A87AF8;--mb:#160840;
+  --pc:#F070B8;--pb:#2C0820;--nc:#FAC840;--nb:#281800;
+  --tc:#F07070;--tb:#280808;--lc:#B888FA;--lb:#1C0840;
+  --skc:#8898CC;--skb:#111C38;
+  --clc:#F07040;--clb:#281408;
+  --soc:#2EC8A8;--sob:#042820;
+  --frc:#50C860;--frb:#041808;
+  --kkc:#F0C040;--kkb:#201800;
+  --shadow:0 1px 4px rgba(0,0,0,.3),0 0 0 1px rgba(255,255,255,.04);
+}}
+:root[data-theme="dark"]{
+  --bg:#0B1225;--surface:#152040;--surface-sub:#192850;
+  --border:#243560;--border-sub:#1C2C52;
+  --ink:#D8E4F8;--ink-2:#7A90C4;--ink-3:#4A5E88;--ink-4:#2A3D68;
+  --hdr:#0A1430;--hdr-line:#182868;
+  --dj:#4A8EE8;--dh:#AA60F0;
+  --sh-c:#8898D0;--sh-bg:#192050;
+  --ec:#5A98F8;--eb:#0A1A40;--bc:#3ACD70;--bb:#052814;
+  --sc:#20C8EE;--sb:#042030;--mc:#A87AF8;--mb:#160840;
+  --pc:#F070B8;--pb:#2C0820;--nc:#FAC840;--nb:#281800;
+  --tc:#F07070;--tb:#280808;--lc:#B888FA;--lb:#1C0840;
+  --skc:#8898CC;--skb:#111C38;
+  --clc:#F07040;--clb:#281408;
+  --soc:#2EC8A8;--sob:#042820;
+  --frc:#50C860;--frb:#041808;
+  --kkc:#F0C040;--kkb:#201800;
+  --shadow:0 1px 4px rgba(0,0,0,.3),0 0 0 1px rgba(255,255,255,.04);
+}
+:root[data-theme="light"]{
+  --bg:#EEF2FA;--surface:#FFFFFF;--surface-sub:#F3F6FC;
+  --border:#D8E0F0;--border-sub:#E8EEFA;
+  --ink:#18254A;--ink-2:#4A5B84;--ink-3:#8898BE;--ink-4:#C0CDE6;
+  --hdr:#122058;--hdr-line:#1F3280;
+  --dj:#1059A8;--dh:#6E1CB5;
+  --sh-c:#3A5296;--sh-bg:#E5EBFC;
+  --ec:#1558D6;--eb:#EDF3FF;--bc:#1A8040;--bb:#EDFAF3;
+  --sc:#0585A8;--sb:#E8F8FD;--mc:#6B25C0;--mb:#F4EEFF;
+  --pc:#B51466;--pb:#FEF0F7;--nc:#9A5400;--nb:#FFF6E8;
+  --tc:#C0181C;--tb:#FFF3F3;--lc:#6C45E0;--lb:#F2EEFF;
+  --skc:#4B5E8A;--skb:#F0F3FA;
+  --clc:#B04A10;--clb:#FFF3EC;
+  --soc:#1A7A6A;--sob:#EAF9F5;
+  --frc:#2A7030;--frb:#EDF9EE;
+  --kkc:#7A5500;--kkb:#FFF8E0;
+  --shadow:0 1px 4px rgba(18,32,88,.07),0 0 0 1px rgba(18,32,88,.04);
+}
+
+body{
+  font-family:-apple-system,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',BlinkMacSystemFont,'Segoe UI',sans-serif;
+  background:var(--bg);color:var(--ink);padding:20px;line-height:1.4;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1080px;margin:0 auto}
+
+/* ── Nav switcher ── */
+.nav-switcher{
+  background:var(--hdr);
+  border-radius:var(--r) var(--r) 0 0;
+  padding:10px 16px 0;
+  display:flex;
+  align-items:flex-end;
+  gap:4px;
+}
+.nav-tab{
+  font-size:11px;font-weight:700;
+  padding:7px 16px;
+  border-radius:7px 7px 0 0;
+  text-decoration:none;
+  letter-spacing:.2px;
+  border:none;cursor:pointer;
+  transition:background .15s,color .15s;
+}
+.nav-tab.inactive{
+  background:rgba(255,255,255,.08);
+  color:rgba(200,218,255,.65);
+}
+.nav-tab.inactive:hover{background:rgba(255,255,255,.15);color:rgba(220,235,255,.9)}
+.nav-tab.active{
+  background:var(--surface);
+  color:var(--ink);
+}
+
+/* ── Site header ── */
+.site-header{
+  background:var(--hdr);
+  border-bottom:2px solid var(--hdr-line);
+  padding:16px 24px 14px;
+  display:flex;align-items:flex-end;justify-content:space-between;
+  gap:12px;flex-wrap:wrap;
+}
+.site-eyebrow{font-size:10px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:rgba(180,200,255,.55);margin-bottom:4px}
+.site-title{font-size:20px;font-weight:800;color:#fff;letter-spacing:-.3px}
+.site-names{display:flex;gap:8px;margin-top:6px;align-items:center}
+.name-pill{font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px;letter-spacing:.2px}
+.name-dj{background:rgba(70,140,240,.22);color:#7EC8FF}
+.name-dh{background:rgba(160,90,240,.22);color:#CDA0FF}
+.theme-btn{
+  background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);
+  color:rgba(210,225,255,.8);font-size:11px;font-weight:600;
+  padding:6px 14px;border-radius:20px;cursor:pointer;letter-spacing:.3px;
+  transition:background .15s;align-self:flex-start;
+}
+.theme-btn:hover{background:rgba(255,255,255,.14)}
+
+/* ── Legend ── */
+.legend{
+  background:var(--surface);border-bottom:1px solid var(--border);
+  padding:10px 16px;display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;
+}
+.lg-label{font-size:9px;font-weight:800;letter-spacing:.8px;text-transform:uppercase;color:var(--ink-3);margin-right:4px}
+.lg-items{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center}
+.lg{display:flex;align-items:center;gap:5px;font-size:10px;font-weight:600;color:var(--ink-2)}
+.lg-dot{width:9px;height:9px;border-radius:2px;flex-shrink:0}
+
+/* ── Sections ── */
+.section{margin-top:18px}
+.section-label{
+  font-size:10px;font-weight:800;letter-spacing:.8px;text-transform:uppercase;
+  color:var(--ink-2);margin-bottom:8px;padding-left:14px;
+  position:relative;display:flex;align-items:center;gap:8px;
+}
+.section-label::before{
+  content:'';position:absolute;left:0;top:50%;transform:translateY(-50%);
+  width:4px;height:14px;background:var(--dj);border-radius:2px;opacity:.6;
+}
+.section-label .sl-sub{font-weight:600;color:var(--ink-3);letter-spacing:0;font-size:10px}
+
+.weekday-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.weekend-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;max-width:440px}
+
+/* ── Day card ── */
+.day{background:var(--surface);border-radius:var(--r);box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column}
+.dh{background:var(--surface-sub);border-bottom:1px solid var(--border-sub);padding:7px 10px 6px;display:flex;align-items:baseline;gap:5px}
+.dh-wd{font-size:13px;font-weight:800;color:var(--ink)}
+.dh-dt{font-size:10px;color:var(--ink-3);font-weight:500}
+.db{display:flex;flex-direction:column;gap:3px;padding:6px;flex:1}
+.empty-day .db{padding:12px 8px;align-items:center;justify-content:center}
+.empty-msg{font-size:10px;font-weight:600;color:var(--ink-4);letter-spacing:.3px}
+
+/* ── Two-column layout ── */
+.indiv{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.ccol{display:flex;flex-direction:column;gap:3px}
+.col-hd{font-size:8.5px;font-weight:800;padding:4px 0;border-radius:4px;text-align:center;letter-spacing:.6px;text-transform:uppercase;width:100%;display:block}
+.col-hd.dj{background:var(--dj);color:#fff}
+.col-hd.dh{background:var(--dh);color:#fff}
+
+/* ── Chips ── */
+.chip{border-radius:var(--rs);padding:4px 7px 4px 10px;display:flex;flex-direction:column;gap:1px;position:relative;font-size:10px}
+.chip::before{content:'';position:absolute;left:3px;top:5px;bottom:5px;width:2px;border-radius:1px}
+.cn{font-weight:700;display:flex;align-items:center;gap:4px;line-height:1.25;flex-wrap:wrap}
+.ct{color:inherit;opacity:.7;font-size:9px;font-variant-numeric:tabular-nums;line-height:1.35}
+.ck{color:inherit;opacity:.5;font-size:8.5px;line-height:1.35}
+
+/* ── Chip colors ── */
+.school{background:var(--skb);color:var(--skc)}.school::before{background:var(--skc)}
+.swim{background:var(--sb);color:var(--sc)}.swim::before{background:var(--sc)}
+.piano{background:var(--pb);color:var(--pc)}.piano::before{background:var(--pc)}
+.taekwondo{background:var(--tb);color:var(--tc)}.taekwondo::before{background:var(--tc)}
+.english{background:var(--eb);color:var(--ec)}.english::before{background:var(--ec)}
+.math{background:var(--mb);color:var(--mc)}.math::before{background:var(--mc)}
+.noonhigh{background:var(--nb);color:var(--nc)}.noonhigh::before{background:var(--nc)}
+.language{background:var(--lb);color:var(--lc)}.language::before{background:var(--lc)}
+.climbing{background:var(--clb);color:var(--clc)}.climbing::before{background:var(--clc)}
+.social{background:var(--sob);color:var(--soc)}.social::before{background:var(--soc)}
+.forest{background:var(--frb);color:var(--frc)}.forest::before{background:var(--frc)}
+.kiki{background:var(--kkb);color:var(--kkc)}.kiki::before{background:var(--kkc)}
+
+@media(max-width:760px){
+  .weekday-grid{grid-template-columns:repeat(3,1fr)}
+  .weekend-grid{grid-template-columns:1fr 1fr;max-width:100%}
+  body{padding:12px}
+}
+@media(max-width:480px){
+  .weekday-grid{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+
+<div class="wrap">
+
+  <!-- ── Nav switcher ── -->
+  <div class="nav-switcher">
+    <a href="index.html" class="nav-tab inactive">여름방학 시간표</a>
+    <span class="nav-tab active">2026년 2학기</span>
+  </div>
+
+  <!-- ── Header ── -->
+  <div class="site-header">
+    <div>
+      <div class="site-eyebrow">정규 주간 일정 (26.6~)</div>
+      <div class="site-title">박도진 · 박도하</div>
+      <div class="site-names">
+        <span class="name-pill name-dj">도진</span>
+        <span style="color:rgba(180,200,255,.3);font-size:12px">·</span>
+        <span class="name-pill name-dh">도하</span>
+        <span style="font-size:10px;color:rgba(180,200,255,.45);font-weight:500">2026년 2학기</span>
+      </div>
+    </div>
+    <button class="theme-btn" onclick="(function(){var r=document.documentElement;r.setAttribute('data-theme',r.getAttribute('data-theme')==='dark'?'light':'dark')})()">테마 전환</button>
+  </div>
+
+  <!-- ── Legend ── -->
+  <div class="legend">
+    <span class="lg-label">범례</span>
+    <div class="lg-items">
+      <span class="lg"><span class="lg-dot" style="background:var(--skc)"></span>학교</span>
+      <span class="lg"><span class="lg-dot" style="background:var(--tc)"></span>태권도</span>
+      <span class="lg"><span class="lg-dot" style="background:var(--sc)"></span>수영</span>
+      <span class="lg"><span class="lg-dot" style="background:var(--pc)"></span>피아노</span>
+      <span class="lg"><span class="lg-dot" style="background:var(--ec)"></span>영어학원</span>
+      <span class="lg"><span class="lg-dot" style="background:var(--mc)"></span>수학</span>
+      <span class="lg"><span class="lg-dot" style="background:var(--nc)"></span>눈높이</span>
+      <span class="lg"><span class="lg-dot" style="background:var(--lc)"></span>언어수업</span>
+      <span class="lg"><span class="lg-dot" style="background:var(--soc)"></span>사회성수업</span>
+      <span class="lg"><span class="lg-dot" style="background:var(--kkc)"></span>키키네틱</span>
+    </div>
+  </div>
+
+  <!-- ══════════ 평일 월~금 ══════════ -->
+  <div class="section">
+    <div class="section-label">평일 <span class="sl-sub">월 ~ 금</span></div>
+    <div class="weekday-grid">
+
+      <!-- 월요일 -->
+      <div class="day">
+        <div class="dh"><span class="dh-wd">월</span></div>
+        <div class="db">
+          <div class="indiv">
+            <div class="ccol">
+              <div class="col-hd dj">도진</div>
+              <div class="chip school"><span class="cn">학교</span><span class="ct">9:00 ~ 13:30</span><span class="ck">5교시</span></div>
+              <div class="chip swim"><span class="cn">수영</span><span class="ct">14:34 ~ 16:00</span></div>
+              <div class="chip piano"><span class="cn">피아노</span><span class="ct">16:30 ~ 17:20</span></div>
+            </div>
+            <div class="ccol">
+              <div class="col-hd dh">도하</div>
+              <div class="chip school"><span class="cn">학교</span><span class="ct">9:00 ~ 12:50</span><span class="ck">4교시</span></div>
+              <div class="chip piano"><span class="cn">피아노</span><span class="ct">13:50 ~ 14:40</span></div>
+              <div class="chip english"><span class="cn">영어학원</span><span class="ct">16:15 ~ 18:10</span><span class="ck">셔틀 15:40</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 화요일 -->
+      <div class="day">
+        <div class="dh"><span class="dh-wd">화</span></div>
+        <div class="db">
+          <div class="indiv">
+            <div class="ccol">
+              <div class="col-hd dj">도진</div>
+              <div class="chip school"><span class="cn">학교</span><span class="ct">9:00 ~ 13:30</span><span class="ck">5교시</span></div>
+              <div class="chip taekwondo"><span class="cn">태권도</span><span class="ct">13:50 ~ 14:40</span></div>
+              <div class="chip math"><span class="cn">CMS</span><span class="ct">16:20 ~ 18:05</span></div>
+            </div>
+            <div class="ccol">
+              <div class="col-hd dh">도하</div>
+              <div class="chip school"><span class="cn">학교</span><span class="ct">9:00 ~ 13:30</span><span class="ck">5교시</span></div>
+              <div class="chip taekwondo"><span class="cn">태권도</span><span class="ct">14:30 ~ 15:20</span></div>
+              <div class="chip math"><span class="cn">필즈</span><span class="ct">16:30 ~ 18:20</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 수요일 -->
+      <div class="day">
+        <div class="dh"><span class="dh-wd">수</span></div>
+        <div class="db">
+          <div class="indiv">
+            <div class="ccol">
+              <div class="col-hd dj">도진</div>
+              <div class="chip school"><span class="cn">학교</span><span class="ct">9:00 ~ 13:30</span><span class="ck">5교시</span></div>
+              <div class="chip taekwondo"><span class="cn">태권도</span><span class="ct">13:50 ~ 14:40</span></div>
+              <div class="chip noonhigh"><span class="cn">눈높이</span><span class="ct">15:45 ~ 16:15</span><span class="ck">집</span></div>
+              <div class="chip piano"><span class="cn">피아노</span><span class="ct">16:30 ~ 17:20</span></div>
+            </div>
+            <div class="ccol">
+              <div class="col-hd dh">도하</div>
+              <div class="chip school"><span class="cn">학교</span><span class="ct">9:00 ~ 13:30</span><span class="ck">5교시</span></div>
+              <div class="chip taekwondo"><span class="cn">태권도</span><span class="ct">14:30 ~ 15:20</span></div>
+              <div class="chip english"><span class="cn">영어학원</span><span class="ct">16:15 ~ 18:10</span><span class="ck">셔틀 15:40</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 목요일 -->
+      <div class="day">
+        <div class="dh"><span class="dh-wd">목</span></div>
+        <div class="db">
+          <div class="indiv">
+            <div class="ccol">
+              <div class="col-hd dj">도진</div>
+              <div class="chip school"><span class="cn">학교</span><span class="ct">9:00 ~ 14:20</span><span class="ck">6교시</span></div>
+              <div class="chip taekwondo"><span class="cn">태권도</span><span class="ct">14:30 ~ 15:20</span></div>
+            </div>
+            <div class="ccol">
+              <div class="col-hd dh">도하</div>
+              <div class="chip school"><span class="cn">학교</span><span class="ct">9:00 ~ 13:30</span><span class="ck">5교시</span></div>
+              <div class="chip math"><span class="cn">필즈</span><span class="ct">16:30 ~ 18:20</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 금요일 -->
+      <div class="day">
+        <div class="dh"><span class="dh-wd">금</span></div>
+        <div class="db">
+          <div class="indiv">
+            <div class="ccol">
+              <div class="col-hd dj">도진</div>
+              <div class="chip school"><span class="cn">학교</span><span class="ct">9:00 ~ 13:30</span><span class="ck">5교시</span></div>
+              <div class="chip taekwondo"><span class="cn">태권도</span><span class="ct">13:50 ~ 14:40</span></div>
+              <div class="chip piano"><span class="cn">은하수 피아노</span><span class="ct">16:30 ~ 17:20</span></div>
+              <div class="chip language"><span class="cn">언어수업</span><span class="ct">17:40 ~ 18:30</span><span class="ck">집</span></div>
+            </div>
+            <div class="ccol">
+              <div class="col-hd dh">도하</div>
+              <div class="chip school"><span class="cn">학교</span><span class="ct">9:00 ~ 12:50</span><span class="ck">4교시</span></div>
+              <div class="chip taekwondo"><span class="cn">태권도</span><span class="ct">13:30 ~ 14:20</span></div>
+              <div class="chip english"><span class="cn">영어학원</span><span class="ct">16:15 ~ 18:10</span><span class="ck">셔틀 15:40</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══════════ 주말 토~일 ══════════ -->
+  <div class="section">
+    <div class="section-label">주말 <span class="sl-sub">토 · 일</span></div>
+    <div class="weekend-grid">
+
+      <!-- 토요일 -->
+      <div class="day">
+        <div class="dh"><span class="dh-wd">토</span></div>
+        <div class="db">
+          <div class="indiv">
+            <div class="ccol">
+              <div class="col-hd dj">도진</div>
+              <div class="chip social"><span class="cn">사회성수업</span><span class="ct">13:00 ~ 14:30</span></div>
+            </div>
+            <div class="ccol">
+              <div class="col-hd dh">도하</div>
+              <div class="chip kiki"><span class="cn">키키네틱</span><span class="ct">11:00 ~ 12:50</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 일요일 -->
+      <div class="day empty-day">
+        <div class="dh"><span class="dh-wd">일</span></div>
+        <div class="db"><span class="empty-msg">자유 시간</span></div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
