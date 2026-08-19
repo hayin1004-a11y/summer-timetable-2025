@@ -101,39 +101,29 @@ body{
 }
 .wrap{max-width:1080px;margin:0 auto}
 
-/* ── Nav switcher ── */
-.nav-switcher{
-  background:var(--hdr);
-  border-radius:var(--r) var(--r) 0 0;
-  padding:10px 16px 0;
-  display:flex;
-  align-items:flex-end;
-  gap:4px;
-}
-.nav-tab{
+/* ── Dropdown ── */
+.timetable-select{
+  background:rgba(255,255,255,.10);
+  border:1px solid rgba(255,255,255,.20);
+  color:rgba(220,235,255,.92);
   font-size:11px;font-weight:700;
-  padding:7px 16px;
-  border-radius:7px 7px 0 0;
-  text-decoration:none;
-  letter-spacing:.2px;
-  border:none;cursor:pointer;
-  transition:background .15s,color .15s;
+  padding:6px 30px 6px 12px;
+  border-radius:20px;cursor:pointer;
+  appearance:none;-webkit-appearance:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='rgba(180%2C200%2C255%2C.65)'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 10px center;
+  outline:none;font-family:inherit;
 }
-.nav-tab.inactive{
-  background:rgba(255,255,255,.08);
-  color:rgba(200,218,255,.65);
-}
-.nav-tab.inactive:hover{background:rgba(255,255,255,.15);color:rgba(220,235,255,.9)}
-.nav-tab.active{
-  background:var(--surface);
-  color:var(--ink);
-}
+.timetable-select:hover{background-color:rgba(255,255,255,.16)}
+.timetable-select option{background:#122058;color:#D8E4F8}
+.hdr-right{display:flex;flex-direction:column;gap:8px;align-items:flex-end}
 
 /* ── Site header ── */
 .site-header{
   background:var(--hdr);
   border-bottom:2px solid var(--hdr-line);
   padding:16px 24px 14px;
+  border-radius:var(--r) var(--r) 0 0;
   display:flex;align-items:flex-end;justify-content:space-between;
   gap:12px;flex-wrap:wrap;
 }
@@ -226,12 +216,6 @@ body{
 
 <div class="wrap">
 
-  <!-- ── Nav switcher ── -->
-  <div class="nav-switcher">
-    <a href="index.html" class="nav-tab inactive">여름방학 시간표</a>
-    <span class="nav-tab active">2026년 2학기</span>
-  </div>
-
   <!-- ── Header ── -->
   <div class="site-header">
     <div>
@@ -244,7 +228,13 @@ body{
         <span style="font-size:10px;color:rgba(180,200,255,.45);font-weight:500">2026년 2학기</span>
       </div>
     </div>
-    <button class="theme-btn" onclick="(function(){var r=document.documentElement;r.setAttribute('data-theme',r.getAttribute('data-theme')==='dark'?'light':'dark')})()">테마 전환</button>
+    <div class="hdr-right">
+      <select class="timetable-select" onchange="window.location.href=this.value">
+        <option value="index.html">여름방학 2026</option>
+        <option value="semester2.html" selected>2026년 2학기</option>
+      </select>
+      <button class="theme-btn" onclick="(function(){var r=document.documentElement;r.setAttribute('data-theme',r.getAttribute('data-theme')==='dark'?'light':'dark')})()">테마 전환</button>
+    </div>
   </div>
 
   <!-- ── Legend ── -->
